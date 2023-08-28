@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devStudio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+  </head>
+  <body>
+    <!----comienza header-->
+    <header class="header">
+      <nav class="navigation__menu container">
+        <div>
+          <ul class="unList navigation__links">
+            <li>
+              <a class="webstudio" href="./index.html" rel="noreferrer noopener"
+                >webstudio</a
+              >
+            </li>
+            <li>
+              <a
+                class="active-color text__link"
+                href="./index.html"
+                rel="noreferrer noopener"
+                >estudio</a
+              >
+            </li>
+            <li>
+              <a
+                class="text__link"
+                href="./portfolio.html"
+                rel="noreferrer noopener"
+                >portafolio</a
+              >
+            </li>
+            <li>
+              <a
+                class="text__link"
+                href="./index.html"
+                rel="noreferrer noopener"
+                >contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!------------------------------------------->
+        <div>
+          <ul class="unList navigation__links">
+            <li>
+              <svg with="16px" height="16px">
+                <use href="./images/icons/symbol-defs.svg#icon-sobre"></use>
+              </svg>
+              <a class="text__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <svg with="16px" height="16px">
+                <use href="./images/icons/symbol-defs.svg#icon-telfono"></use>
+              </svg>
+              <a class="text__link" class="link" href="tel:+525555296000"
+                >+52 55 5529 6000</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--cierra header-->
+    <!------------------------------------------------------------------------------------------>
+    <!---inicio seccion hero-->
+    <section class="hero">
+      <div class="hero__item hero__position">
+        <h1 class="hero__tittle">soluciones eficaces para su negocio</h1>
+        <button class="button__services" type="button">
+          solicite nuestro servico
+        </button>
+      </div>
+    </section>
+    <!---cierra seccion hero-->
+    <!------------------------------------------------------------------------------------------>
+    <!---inicio main__menu-->
+    <section>
+      <main class="container">
+        <div class="menu">
+          <ul class="unList main__menu">
+            <li>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-antena"></use>
+              </svg>
+              <h3 class="value__added">atencion a los detalles</h3>
+              <p class="paragraph__value">
+                Nos adentramos en todos los detalles y procesos de su negocio,
+                para así desarrollar una solución a su medida.
+              </p>
+            </li>
+            <!------------------------------------------------------------->
+            <li>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-reloj"></use>
+              </svg>
+              <h3 class="value__added">puntualidad</h3>
+              <p class="paragraph__value">
+                Con nosotros, usted puede sentirse seguro y protegido. Un
+                principio importante de la empresa: respetar su tiempo y
+                respetar los plazos acordados.
+              </p>
+            </li>
+            <!------------------------------------------------------------->
+            <li>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-diagrama"></use>
+              </svg>
+              <h3 class="value__added">planificacion</h3>
+              <p class="paragraph__value">
+                Usted podrá observar y participar en cada fase del desarrollo y
+                aplicación de soluciones.
+              </p>
+            </li>
+            <!------------------------------------------------------------->
+            <li>
+              <svg>
+                <use
+                  href="./images/icons/symbol-defs.svg#icon-astronauta"
+                ></use>
+              </svg>
+              <h3 class="value__added">tecnología moderna</h3>
+              <p class="paragraph__value">
+                Usamos herramientas innovadoras para resolver las tareas
+                asignadas. Es hora de simplificar los procesos laborales.
+              </p>
+            </li>
+            <!------------------------------------------------------------->
+          </ul>
+        </div>
+      </main>
+    </section>
+    <!---cirra main__menu-->
+    <!------------------------------------------------------------------------------------------>
+    <!---inicio seccion a que nos dedicamos-->
+    <section class="products">
+      <div class="container">
+        <div class="solution__products">
+          <h2 class="products__tittle">A qué nos dedicamos</h2>
+          <div class="solutions">
+            <!---------------------------------------------------------->
+            <div class="desktop__aplications">
+              <img
+                class="solution__image"
+                src="./images/aplicacionesDeEscritorio.jpg"
+                alt="aplicacionesDeEscritorio"
+              />
+              <p>aplicaciones de escritorio</p>
+            </div>
+            <!---------------------------------------------------------->
+            <div class="movile__aplication">
+              <img
+                class="solution__image"
+                src="./images/aplicacionesMobiles.jpg"
+                alt="aplicacionesMobiles"
+              />
+              <p>aplicaciones móviles</p>
+            </div>
+            <!---------------------------------------------------------->
+            <div class="solution__design">
+              <img
+                class="solution__image"
+                src="./images/solucionesDeDiseño.jpg"
+                alt="solucionesDeDiseño"
+              />
+              <p>soluciones de diseño</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---ciera seccion a que nos dedicamos-->
+    <!------------------------------------------------------------------------------------------>
+    <!---abre seccion our__team-->
+    <section class="our__team">
+      <div class="container paddin__team">
+        <h2 class="team__title">nuestro equipo</h2>
+        <ul class="unList team__card">
+          <li class="card team">
+            <!---abre card andres cubo-->
+            <img src="./images/AndresCubo.jpg" alt="AndresCubo" />
+            <p class="team__member">Andres Cubo</p>
+            <p class="team__role">diseñador de productos</p>
+            <div class="icons__team">
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </div>
+          </li>
+          <!---cierra card andres cubo-->
+          <!---abre card carla palacios-->
+          <li class="card team">
+            <img src="./images/CarlaPalacios.jpg" alt="CarlaPalacios" />
+            <p class="team__member">Carla Palacios</p>
+            <p class="team__role">desarrolladora fronted</p>
+            <div class="icons__team">
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </div>
+          </li>
+          <!---ciera card carla palacios-->
+          <!---abre card Mario Dorado-->
+          <li class="card team">
+            <img src="./images/MarioDorado.jpg" alt="MarioDorado" />
+            <p class="team__member">Mario Dorado</p>
+            <p class="team__role">marketing</p>
+            <div class="icons__team">
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </div>
+          </li>
+          <!---cierra card Mario Dorado-->
+          <!---abre card Pablo Mijangos-->
+          <li class="card team">
+            <img src="./images/PabloMijangos.jpg" alt="PabloMijangos" />
+            <p class="team__member">Pablo Mijangos</p>
+            <p class="team__role">diseñador iu</p>
+            <div class="icons__team">
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </div>
+          </li>
+          <!---cierra card Pablo Mijangos-->
+        </ul>
+      </div>
+    </section>
+    <!---cierra seccion our__team-->
+    <!------------------------------------------------------------------------------------------>
+    <!--abre seccion regular__customers-->
+    <section class="customers">
+      <div class="container ps__customers">
+        <div class="position__customers">
+          <h2 class="regular__customers">clientes regulares</h2>
+          <div class="icons__container">
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-cliente1"></use>
+            </svg>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-cliente2"></use>
+            </svg>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-cliente3"></use>
+            </svg>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-cliente5"></use>
+            </svg>
+            <svg>
+              <use href="./images/icons/symbol-defs.svg#icon-cliente6"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--cierra seccion regular__customers-->
+    <!------------------------------------------------------------------------------------------>
+    <!--inicio seccion footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="position__footer">
+          <div class="info__footer">
+            <!--abre info footer-->
+            <a class="webstudio" href="./index.html" rel="noreferrer noopener">
+              webstudio</a
+            >
+            <address class="info__address">
+              <p class="direccion-oficina">
+                Calz. Ticomán 500, Ciudad de México, CDMX, México
+              </p>
+              <ul class="contact list unList">
+                <li>
+                  <a class="contactame link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="contactame link" href="tel:+525555296000"
+                    >+52 55 5529 6000</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!--cierra info footer-->
+          <div class="info__footer">
+            <h5 class="social__network">encuentranos en</h5>
+            <div class="icons__footer">
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+              <svg>
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--cierra seccion footer-->
+  </body>
+</html>
