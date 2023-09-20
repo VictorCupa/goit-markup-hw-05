@@ -11,8 +11,9 @@
     <!----comienza header-->
     <header class="header">
       <nav class="navigation__menu container">
-        <div>
-          <ul class="unList navigation__links">
+        <div class="navigation__position">
+          <!------------------------------------------->
+          <ul class="unList navigation__list">
             <li>
               <a class="webstudio" href="./index.html" rel="noreferrer noopener"
                 >webstudio</a
@@ -20,7 +21,7 @@
             </li>
             <li>
               <a
-                class="active-color text__link"
+                class="active-color text__links"
                 href="./index.html"
                 rel="noreferrer noopener"
                 >estudio</a
@@ -28,7 +29,7 @@
             </li>
             <li>
               <a
-                class="text__link"
+                class="text__links"
                 href="./portfolio.html"
                 rel="noreferrer noopener"
                 >portafolio</a
@@ -36,34 +37,38 @@
             </li>
             <li>
               <a
-                class="text__link"
+                class="text__links"
                 href="./index.html"
                 rel="noreferrer noopener"
                 >contacto</a
               >
             </li>
           </ul>
-        </div>
-        <!------------------------------------------->
-        <div>
-          <ul class="unList navigation__links">
+          <!------------------------------------------->
+          <!------------------------------------------->
+          <ul class="unList navigation__contact">
             <li>
-              <svg with="16px" height="16px">
-                <use href="./images/icons/symbol-defs.svg#icon-sobre"></use>
-              </svg>
-              <a class="text__link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <div class="navigation__item">
+                <svg class="icon__contac__item" width="16px" height="12px">
+                  <use href="./images/icons/symbol-defs.svg#icon-sobre"></use>
+                </svg>
+                <a class="text__links" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </div>
             </li>
             <li>
-              <svg with="16px" height="16px">
-                <use href="./images/icons/symbol-defs.svg#icon-telfono"></use>
-              </svg>
-              <a class="text__link" class="link" href="tel:+525555296000"
-                >+52 55 5529 6000</a
-              >
+              <div class="navigation__item">
+                <svg class="icon__contac__item" width="10px" height="16px">
+                  <use href="./images/icons/symbol-defs.svg#icon-telfono"></use>
+                </svg>
+                <a class="text__links" href="tel:+525555296000"
+                  >+52 55 5529 6000</a
+                >
+              </div>
             </li>
           </ul>
+          <!------------------------------------------->
         </div>
       </nav>
     </header>
@@ -74,67 +79,67 @@
       <div class="hero__item hero__position">
         <h1 class="hero__tittle">soluciones eficaces para su negocio</h1>
         <button class="button__services" type="button">
-          solicite nuestro servico
+          Solicite nuestro servico
         </button>
       </div>
     </section>
     <!---cierra seccion hero-->
     <!------------------------------------------------------------------------------------------>
-    <!---inicio main__menu-->
-    <section>
-      <main class="container">
-        <div class="menu">
-          <ul class="unList main__menu">
-            <li>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-antena"></use>
-              </svg>
-              <h3 class="value__added">atencion a los detalles</h3>
-              <p class="paragraph__value">
-                Nos adentramos en todos los detalles y procesos de su negocio,
-                para así desarrollar una solución a su medida.
-              </p>
-            </li>
-            <!------------------------------------------------------------->
-            <li>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-reloj"></use>
-              </svg>
-              <h3 class="value__added">puntualidad</h3>
-              <p class="paragraph__value">
-                Con nosotros, usted puede sentirse seguro y protegido. Un
-                principio importante de la empresa: respetar su tiempo y
-                respetar los plazos acordados.
-              </p>
-            </li>
-            <!------------------------------------------------------------->
-            <li>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-diagrama"></use>
-              </svg>
-              <h3 class="value__added">planificacion</h3>
-              <p class="paragraph__value">
-                Usted podrá observar y participar en cada fase del desarrollo y
-                aplicación de soluciones.
-              </p>
-            </li>
-            <!------------------------------------------------------------->
-            <li>
-              <svg>
-                <use
-                  href="./images/icons/symbol-defs.svg#icon-astronauta"
-                ></use>
-              </svg>
-              <h3 class="value__added">tecnología moderna</h3>
-              <p class="paragraph__value">
-                Usamos herramientas innovadoras para resolver las tareas
-                asignadas. Es hora de simplificar los procesos laborales.
-              </p>
-            </li>
-            <!------------------------------------------------------------->
-          </ul>
-        </div>
-      </main>
+    <!---inicio caracteristicas-->
+    <section class="characteristics">
+      <div class="container">
+        <ul class="characteristics__position unList">
+          <li class="characteristics__item">
+            <svg class="characteristics__icons" width="270px" height="120px">
+              <use href="./images/icons/symbol-defs.svg#icon-antena-2"></use>
+            </svg>
+            <h3>atención a los detalles</h3>
+            <p>
+              Nos adentramos en todos los detalles y procesos de su negocio,
+              para así desarrollar una solución a su medida.
+            </p>
+          </li>
+          <!------------------------------------------------------------------------------------------>
+          <li class="characteristics__item">
+            <svg class="characteristics__icons" width="270px" height="120px">
+              <use href="./images/icons/symbol-defs.svg#icon-puntualidad"></use>
+            </svg>
+            <h3>puntualidad</h3>
+            <p>
+              Con nosotros, usted puede sentirse seguro y protegido. Un
+              principio importante de la empresa: respetar su tiempo y respetar
+              los plazos acordados.
+            </p>
+          </li>
+          <!------------------------------------------------------------------------------------------>
+          <li class="characteristics__item">
+            <svg class="characteristics__icons" width="270px" height="120px">
+              <use
+                href="./images/icons/symbol-defs.svg#icon-planificacion"
+              ></use>
+            </svg>
+            <h3>planificacion</h3>
+            <p>
+              Usted podrá observar y participar en cada fase del desarrollo y
+              aplicación de soluciones.
+            </p>
+          </li>
+          <!------------------------------------------------------------------------------------------>
+          <li class="characteristics__item">
+            <svg class="characteristics__icons" width="270px" height="120px">
+              <use
+                href="./images/icons/symbol-defs.svg#icon-planificacion"
+              ></use>
+            </svg>
+            <h3>tecnología moderna</h3>
+            <p>
+              Usamos herramientas innovadoras para resolver las tareas
+              asignadas. Es hora de simplificar los procesos laborales.
+            </p>
+          </li>
+          <!------------------------------------------------------------------------------------------>
+        </ul>
+      </div>
     </section>
     <!---cirra main__menu-->
     <!------------------------------------------------------------------------------------------>
@@ -142,155 +147,154 @@
     <section class="products">
       <div class="container">
         <div class="solution__products">
-          <h2 class="products__tittle">A qué nos dedicamos</h2>
-          <div class="solutions">
-            <!---------------------------------------------------------->
-            <div class="desktop__aplications">
-              <img
-                class="solution__image"
+          <h2 class="products__title">A qué nos dedicamos</h2>
+          <ul class="unList products__list">
+            <li >
+              <img class="products__image"
                 src="./images/aplicacionesDeEscritorio.jpg"
                 alt="aplicacionesDeEscritorio"
               />
               <p>aplicaciones de escritorio</p>
-            </div>
-            <!---------------------------------------------------------->
-            <div class="movile__aplication">
-              <img
-                class="solution__image"
+            </li>
+            <li>
+              <img class="products__image"
                 src="./images/aplicacionesMobiles.jpg"
                 alt="aplicacionesMobiles"
               />
               <p>aplicaciones móviles</p>
-            </div>
-            <!---------------------------------------------------------->
-            <div class="solution__design">
-              <img
-                class="solution__image"
+            </li>
+            <li>
+              <img class="products__image"
                 src="./images/solucionesDeDiseño.jpg"
                 alt="solucionesDeDiseño"
               />
               <p>soluciones de diseño</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <!---ciera seccion a que nos dedicamos-->
     <!------------------------------------------------------------------------------------------>
     <!---abre seccion our__team-->
-    <section class="our__team">
-      <div class="container paddin__team">
-        <h2 class="team__title">nuestro equipo</h2>
-        <ul class="unList team__card">
-          <li class="card team">
+    <section class="team">
+      <div class="container">
+        <div class="position__team">
+        <h2 class="title__team">nuestro equipo</h2>
+        <ul class="unList position__list">
+          <li class="card__team">
             <!---abre card andres cubo-->
-            <img src="./images/AndresCubo.jpg" alt="AndresCubo" />
+            <img class="team__img" src="./images/AndresCubo.jpg" alt="AndresCubo" />
             <p class="team__member">Andres Cubo</p>
             <p class="team__role">diseñador de productos</p>
             <div class="icons__team">
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-instagram-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-twitter-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-facebook-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin-2"></use>
               </svg>
             </div>
           </li>
           <!---cierra card andres cubo-->
           <!---abre card carla palacios-->
-          <li class="card team">
-            <img src="./images/CarlaPalacios.jpg" alt="CarlaPalacios" />
+          <li class="card__team">
+            <img class="team__img" src="./images/CarlaPalacios.jpg" alt="CarlaPalacios" />
             <p class="team__member">Carla Palacios</p>
             <p class="team__role">desarrolladora fronted</p>
             <div class="icons__team">
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-instagram-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-twitter-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-facebook-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin-2"></use>
               </svg>
             </div>
           </li>
           <!---ciera card carla palacios-->
           <!---abre card Mario Dorado-->
-          <li class="card team">
-            <img src="./images/MarioDorado.jpg" alt="MarioDorado" />
+          <li class="card__team">
+            <img class="team__img" src="./images/MarioDorado.jpg" alt="MarioDorado" />
             <p class="team__member">Mario Dorado</p>
             <p class="team__role">marketing</p>
             <div class="icons__team">
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-instagram-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-twitter-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-facebook-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin-2"></use>
               </svg>
             </div>
           </li>
           <!---cierra card Mario Dorado-->
           <!---abre card Pablo Mijangos-->
-          <li class="card team">
-            <img src="./images/PabloMijangos.jpg" alt="PabloMijangos" />
+          <li class="card__team">
+            <img class="team__img" src="./images/PabloMijangos.jpg" alt="PabloMijangos" />
             <p class="team__member">Pablo Mijangos</p>
             <p class="team__role">diseñador iu</p>
             <div class="icons__team">
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-instagram-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-twitter-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-facebook-2"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              <svg class="icon__team">
+                <use href="./images/icons/symbol-defs.svg#icon-linkedin-2"></use>
               </svg>
             </div>
           </li>
           <!---cierra card Pablo Mijangos-->
         </ul>
       </div>
+      </div>
     </section>
     <!---cierra seccion our__team-->
     <!------------------------------------------------------------------------------------------>
     <!--abre seccion regular__customers-->
     <section class="customers">
-      <div class="container ps__customers">
+      <div class="container">
         <div class="position__customers">
-          <h2 class="regular__customers">clientes regulares</h2>
+          <h2 class="title__customers">clientes regulares</h2>
           <div class="icons__container">
-            <svg>
-              <use href="./images/icons/symbol-defs.svg#icon-cliente1"></use>
+            <svg class="customers__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-Cliente-1"></use>
             </svg>
-            <svg>
-              <use href="./images/icons/symbol-defs.svg#icon-cliente2"></use>
+            <svg class="customers__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-Cliente-2"></use>
             </svg>
-            <svg>
-              <use href="./images/icons/symbol-defs.svg#icon-cliente3"></use>
+            <svg class="customers__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-Cliente-3"></use>
             </svg>
-            <svg>
-              <use href="./images/icons/symbol-defs.svg#icon-cliente5"></use>
+            <svg class="customers__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-Cliente-4"></use>
             </svg>
-            <svg>
-              <use href="./images/icons/symbol-defs.svg#icon-cliente6"></use>
+            <svg class="customers__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-Cliente-5"></use>
+            </svg>
+            <svg class="customers__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-Cliente-6"></use>
             </svg>
           </div>
         </div>
@@ -329,17 +333,17 @@
           <div class="info__footer">
             <h5 class="social__network">encuentranos en</h5>
             <div class="icons__footer">
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              <svg >
+                <use class="icons__sizeFooter" href="./images/icons/symbol-defs.svg#icon-instagramFooter"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              <svg >
+                <use class="icons__sizeFooter" href="./images/icons/symbol-defs.svg#icon-twitterFooter"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              <svg >
+                <use class="icons__sizeFooter" href="./images/icons/symbol-defs.svg#icon-facebookFooter"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              <svg >
+                <use class="icons__sizeFooter" href="./images/icons/symbol-defs.svg#icon-linkedinFooter"></use>
               </svg>
             </div>
           </div>

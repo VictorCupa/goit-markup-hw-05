@@ -1,6 +1,7 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-  --backgrount-footer: rgba(47, 48, 58, 1);
+  --background-footer: rgba(47, 48, 58, 1);
   --background: rgb(255, 255, 255);
   --background-team: rgba(245, 244, 250, 1);
   --fuente-general: 'Roboto', sans-serif; /*fuente general para la pagina*/
@@ -44,7 +45,7 @@ address {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  /* padding: 0 15px; */
 }
 /*estilos generales*/
 body {
@@ -58,60 +59,65 @@ body {
 a {
   text-decoration: none;
 }
-
-/*estilos menu navegacion*/
+/*aqui comienza los estilos de la seccion header con los links de navegacion*/
 
 .navigation__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  gap: 306px;
-  border-bottom: rgb(47, 48, 58, 0.4) solid 2.5px;
+  /* background-color: rgba(47, 48, 58, 0.1); */
+  height: 80px;
+  padding: 30px;
 }
-.navigation__links {
+.navigation__position {
   display: flex;
   justify-content: space-between;
-  column-gap: 60px;
+  align-items: center;
+  gap: 250px;
+}
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 55px;
+}
+.navigation__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.navigation__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.text__links {
+  text-transform: capitalize;
+  color: #212121;
+  font-family: var(--fuente-general);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 .webstudio {
-  color: var(--color-link);
-  font-family: var(--fuente-general);
-  font-size: 14px;
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.28px;
-  text-transform: capitalize;
+  letter-spacing: 0.78px;
 }
-.text__link {
-  color: var(--color-texto);
-  font-family: var(--fuente-general);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  text-transform: capitalize;
-}
-.text__link:hover {
-  color: var(--color-link);
-}
-.text__link:focus {
-  color: var(--color-link);
-}
-.active-color {
-  color: var(--color-link);
-}
-
-/* estilos contenido hero hero*/
+/***************************************************************************/
+/*aqui comienza los estilos de la seccion hero*/
 .hero {
   width: 100%;
   height: 600px;
+  background: linear-gradient(rgba(5, 2, 5, 0.3), rgba(5, 2, 5, 0.3)),
+    url(../images/heroBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/heroBackground.jpg);
-  background-attachment: fixed;
   padding: 10px;
 }
 .hero__item {
@@ -119,13 +125,15 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 41px;
-  margin-top: 207px;
+  margin-top: 150px;
+  height: 120px;
 }
 .hero__tittle {
   width: 696px;
+
   color: #fff;
   text-align: center;
-  font-family: Roboto;
+  font-family: var(--fuente-general);
   font-size: 44px;
   font-style: normal;
   font-weight: 900;
@@ -151,177 +159,206 @@ a {
   padding: 10;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-/*seccion main__menu*/
-.menu {
-  padding: 10px;
-}
-.main__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+/***************************************************************************/
+
+/*aqui comienza los estilos de la seccion caracteristicas */
+.characteristics {
+  /* background-color: rgba(33, 33, 33, 0.1); */
   margin-top: 89px;
-  margin-bottom: 99px;
+  margin-bottom: 90px;
 }
-.value__added {
-  color: var(--color-texto);
-  font-family: var(--fuente-general);
+.characteristics__position {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.characteristics__item {
+  /* background-color: azure; */
+  flex-basis: 270px;
+  height: 251px;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.characteristics__item > h3 {
+  color: #212121;
+  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
-.paragraph__value {
-  width: 270px;
-  height: 75px;
-  flex-shrink: 0;
+.characteristics__item > p {
   color: #757575;
+  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
+  
 }
-/* seccion a que nos dedicamos*/
+.characteristics__icons {
+  border-radius: 4px;
+  background: #f5f4fa;
+}
+/***************************************************************************/
+/*aqui empieza los estilos de la seccion a que nos dedicamos*/
 .solution__products {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
   gap: 50px;
-}
-.products__tittle {
-  color: #212121;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-}
-.solutions {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 30px;
+  margin-top: 99px;
   margin-bottom: 94px;
 }
-.solution__image {
-  width: 370px;
-  height: 294px;
-  flex-shrink: 0;
-}
-/*seccion nuestro equipo*/
-.our__team {
-  background-color: var(--background-team);
-  height: 708px;
-}
-.paddin__team {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 50px;
-}
-.team__card {
+.products__list{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
 }
-.team__title {
-  color: var(--color-texto);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  text-transform: capitalize;
-  text-align: center;
-  margin-top: 94px;
+.products__image{
+  width: 370px;
+  height: 294px;
 }
-.card > img {
+.products__title {
+color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+}
+
+/***************************************************************************/
+/*aqui empieza los estilos de la seccion nuestro equipo*/
+
+.team{
+  background-color: var(--background-team);
+  
+}
+.position__team{
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:50px;
+
+}
+.title__team{
+color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+margin-top:94px ;
+text-transform: uppercase;
+}
+.position__list{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  gap: 30px;
+
+}
+.team__img{
   width: 270px;
   height: 260px;
 }
-.team {
+.card__team{
+  background-color:#fff;
   width: 270px;
-  height: 428px;
+  height:428px ;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  background-color: var(--background-team);
-}
-.team:hover {
+  margin-bottom: 94px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
 }
-.team__member {
+.team__member{
   color: #212121;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.48px;
-  margin-top: 30px;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+margin: 30px 0 10px 0 ;
 }
-.team__role {
-  color: #757575;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.48px;
+.team__role{
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+margin-bottom: 16px;
+
 }
-.icons__team {
+.icon__team{
+  width: 30px;
+height: 30px;
+flex-shrink: 0;
+}
+.icons__team{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/***************************************************************************/
+/*aqui empieza los estilos de la seccion clientes regulares*/
+.position__customers{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 40px;
+
+}
+.title__customers{
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+margin-top: 59px;
+text-transform: uppercase;
+}
+.icons__container{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 34px;
-  background-color: rebeccapurple;
-}
-/*seccion customers*/
-.ps__customers {
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-.position__customers {
-  display: flex;
-  flex-direction: column;
-  gap: 44px;
-}
-.regular__customers {
-  margin-top: 95px;
-  text-align: center;
-  color: var(--color-texto);
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  text-transform: capitalize;
-}
-.icons__container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  justify-content:space-between;
   gap: 30px;
-  /* margin-top: ; */
-  margin-bottom: 166px;
 }
-/*seccion footer*/
+.customers__icon{
+  width: 106px;
+height: 52.826px;
+flex-shrink: 0;
+margin-bottom: 150px;
+}
+
+/***************************************************************************/
+/*aqui empieza los estilos de la seccion footer***/
 .footer {
   height: 262px;
-  background-color: var(--backgrount-footer);
+  background-color: var(--background-footer);
 }
 .position__footer {
   display: flex;
@@ -349,6 +386,7 @@ a {
 .icons__footer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 10px;
 }
 .social__network {
@@ -360,6 +398,10 @@ a {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+.icons__sizeFooter{
+  width: 35px;
+  height: 35px;
 }
 /**************************estilos portfolio.html********************/
 

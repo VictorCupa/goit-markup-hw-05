@@ -11,8 +11,9 @@
     <!----comienza header-->
     <header class="header">
       <nav class="navigation__menu container">
-        <div>
-          <ul class="unList navigation__links">
+        <div class="navigation__position">
+          <!------------------------------------------->
+          <ul class="unList navigation__list">
             <li>
               <a class="webstudio" href="./index.html" rel="noreferrer noopener"
                 >webstudio</a
@@ -20,7 +21,7 @@
             </li>
             <li>
               <a
-                class="text__link"
+                class="active-color text__links"
                 href="./index.html"
                 rel="noreferrer noopener"
                 >estudio</a
@@ -28,7 +29,7 @@
             </li>
             <li>
               <a
-                class="text__link active-color"
+                class="text__links"
                 href="./portfolio.html"
                 rel="noreferrer noopener"
                 >portafolio</a
@@ -36,34 +37,38 @@
             </li>
             <li>
               <a
-                class="text__link"
+                class="text__links"
                 href="./index.html"
                 rel="noreferrer noopener"
                 >contacto</a
               >
             </li>
           </ul>
-        </div>
-        <!------------------------------------------->
-        <div>
-          <ul class="unList navigation__links">
+          <!------------------------------------------->
+          <!------------------------------------------->
+          <ul class="unList navigation__contact">
             <li>
-              <svg with="16px" height="16px">
-                <use href="./images/icons/symbol-defs.svg#icon-sobre"></use>
-              </svg>
-              <a class="text__link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <div class="navigation__item">
+                <svg class="icon__contac__item" width="16px" height="12px">
+                  <use href="./images/icons/symbol-defs.svg#icon-sobre"></use>
+                </svg>
+                <a class="text__links" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </div>
             </li>
             <li>
-              <svg with="16px" height="16px">
-                <use href="./images/icons/symbol-defs.svg#icon-telfono"></use>
-              </svg>
-              <a class="text__link" class="link" href="tel:+525555296000"
-                >+52 55 5529 6000</a
-              >
+              <div class="navigation__item">
+                <svg class="icon__contac__item" width="10px" height="16px">
+                  <use href="./images/icons/symbol-defs.svg#icon-telfono"></use>
+                </svg>
+                <a class="text__links" href="tel:+525555296000"
+                  >+52 55 5529 6000</a
+                >
+              </div>
             </li>
           </ul>
+          <!------------------------------------------->
         </div>
       </nav>
     </header>
@@ -178,17 +183,17 @@
           <div class="info__footer">
             <h5 class="social__network">encuentranos en</h5>
             <div class="icons__footer">
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              <svg class="icons__size">
+                <use href="./images/icons/symbol-defs.svg#icon-instagramFooter"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              <svg class="icons__size">
+                <use href="./images/icons/symbol-defs.svg#icon-twitterFooter"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              <svg class="icons__size">
+                <use href="./images/icons/symbol-defs.svg#icon-facebookFooter"></use>
               </svg>
-              <svg>
-                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+              <svg class="icons__size">
+                <use href="./images/icons/symbol-defs.svg#icon-linkedinFooter"></use>
               </svg>
             </div>
           </div>
